@@ -1,0 +1,11 @@
+---
+application:
+  name: "get-reddit-comments"
+  project: "get_reddit_comments"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-get-reddit-comments"
+  routes:
+  - application_name: "get-reddit-comments"
+    paths:
+    - "/*"
