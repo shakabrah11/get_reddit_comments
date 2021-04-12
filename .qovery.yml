@@ -1,11 +1,16 @@
 ---
 application:
-  name: "get-reddit-comments"
-  project: "get_reddit_comments"
+  name: "get-reddit-comments-test"
+  project: "get_com1"
   organization: "QoveryCommunity"
+  storage:
+  - name: "teststorage"
+    size: "10"
+    type: "ssd"
+    mount_point: "/mnt/teststorage"
 routers:
-- name: "main-get-reddit-comments"
+- name: "main-get-reddit-comments-test"
   routes:
-  - application_name: "get-reddit-comments"
+  - application_name: "get-reddit-comments-test"
     paths:
     - "/*"
